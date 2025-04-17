@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide Layout Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .slide {
+      padding: 40px;
+      border: 1px solid #ccc;
+      margin: 20px 0;
+      background-color: #f9f9f9;
+    }
+    .row {
+      margin-bottom: 20px;
+    }
+    .row img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* New styles for columns */
+    .columns {
+      display: flex;
+      gap: 20px;
+    }
+
+    .left-column, .right-column {
+      flex: 1;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+
+    .left-column .row {
+      font-size: 18px;
+    }
+
+    .right-column .row {
+      font-size: 14px;
+    }
+
+    .right-column {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="slide">
+    <div class="row">
+      <h2>Welcome to Our Presentation</h2>
+      <p>This is the first slide containing an introduction to our topic.</p>
+    </div>
+    <div class="row">
+      <img src="https://picsum.photos/100/100?text=Icon1" alt="Sample Image">
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="row">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Feature One</li>
+        <li>Feature Two</li>
+        <li>Feature Three</li>
+      </ul>
+    </div>
+    <div class="row">
+      <p>Each feature is designed to improve your experience and increase productivity.</p>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="row">
+      <h2>Contact Information</h2>
+      <p>Email: contact@example.com</p>
+      <p>Phone: +123 456 7890</p>
+    </div>
+    <div class="row">
+      <img src="https://picsum.photos/100/100?text=Icon1" alt="Contact Banner">
+    </div>
+  </div>
+
+  <!-- New Slide with Columns -->
+  
+  <ul>
+    <li>Average waiting time</li>
+    <li>85%+ user satisfaction rating</li>
+    <li>System uptime above 99.5%.</li>
+</ul>
+      
+    
+    <div class="slide">
+      <div class="left-column">
+          <div class="row">Infosys is a global leader in digital services and consulting, helping companies navigate their digital transformation. It offers a wide range of services, including digital transformation, consulting, and outsourcing. Founded in 1981, Infosys is headquartered in Bangalore, India.</div>
+          <div class="row">Left Column - Row 2</div>
+          <div class="row">Left Column - Row 3</div>
+          <div class="row">Left Column - Row 4</div>
+      </div>
+      <div class="right-column">
+          <div class="row">Right Column - Row 1</div>
+          <div class="row">Right Column - Row 2</div>
+      </div>
+  </div>
+  
+
+</body>
+</html>
