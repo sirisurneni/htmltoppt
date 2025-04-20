@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slide Layout</title>
+    <title>Story Collection Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,15 +13,15 @@
         
         .slide {
             width: 100%;
-            height: 100vh;
-            display: flex;
+            padding: 20px;
             border-bottom: 1px solid #ccc;
         }
         
         .left-column, .right-column {
-            flex: 1;
-            padding: 20px;
-            overflow-y: auto;
+            display: inline-block;
+            vertical-align: top;
+            width: 45%;
+            padding: 15px;
         }
         
         .left-column {
@@ -37,60 +37,62 @@
             padding: 15px;
             margin-bottom: 10px;
             border-radius: 5px;
-        }
-        
-        .left-column .row {
             background-color: #e0e0e0;
         }
         
-        .right-column .row {
-            background-color: #f0f0f0;
-            border: 1px solid #ddd;
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: bold;
+        }
+        
+        form {
+            max-width: 800px;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
-    <!-- Slide 1 -->
+    <div class="slide ">
+        <h1>Success Story Repository</h1>
+        
+        <div class="row">
+           <div class="red" ><h3>Story Title:</h3></div>
+            <p>Global Supply Chain Optimization for XYZ Corp</p>
+        </div>
+        
+        <div class="row">
+            <h3>Client MCC:</h3>
+            <p>XYZ Corporation - Manufacturing</p>
+            <img src="https://picsum.photos/100/100?text=Icon1" alt="Chart Examples" width="50" height="50">
+        </div>
+
+        <div class="row">
+            <h3>Executive Summary:</h3>
+            <p>Helped XYZ Corporation transform their global supply chain operations through advanced AI and analytics, resulting in a comprehensive 27% reduction in overall costs. The multi-phase project began with a detailed assessment of their existing supply chain inefficiencies across 12 global markets, followed by implementation of custom predictive analytics models and machine learning algorithms.</p>
+        </div>
+        
+        
+    </div>
     <div class="slide">
         <div class="left-column">
-            <div class="row">Left Column - Row 1</div>
-            <div class="row">Left Column - Row 2</div>
-            <div class="row">Left Column - Row 3</div>
+            <div class="row grey">
+            <h3>Problem Statement:</h3>
+            <p>XYZ Corporation was facing multiple critical challenges across their global supply chain operations:Rising operational costs: Transportation expenses had increased by 32% over two years due to fuel price volatility and inefficient routing.</p>
+            </div>
+        
+        
+        <div class="row grey">
+            <h3>Solution Provided:</h3>
+            <p>We implemented a comprehensive, AI-driven supply chain transformation program named "SupplyIQ" with the following components:</p>
+        </div>
         </div>
         <div class="right-column">
-            <div class="row">Right Column - Row 1</div>
-            <div class="row">Right Column - Row 2</div>
-            <div class="row">Right Column - Row 3</div>
+        <div class="row grey">
+            <h3>Business Value Delivered:</h3>
+            <p>The SupplyIQ solution delivered significant, measurable business impact across multiple dimensions:The SupplyIQ solution delivered significant, measurable business impact across multiple dimensions:</p>
+            <img src="https://picsum.photos/100/100?text=Icon1" alt="Chart Examples" width="50" height="50">
         </div>
     </div>
-    
-    <!-- Slide 2 -->
-    <div class="slide">
-        <div class="left-column">
-            <div class="row">Left Column - Row 1</div>
-            <div class="row">Left Column - Row 2</div>
-            <div class="row">Left Column - Row 3</div>
-            <div class="row">Left Column - Row 4</div>
-        </div>
-        <div class="right-column">
-            <div class="row">Right Column - Row 1</div>
-            <div class="row">Right Column - Row 2</div>
-        </div>
     </div>
-    
-    <!-- Slide 3 -->
-    <div class="slide">
-        <div class="left-column">
-            <div class="row">Left Column - Row 1</div>
-            <div class="row">Left Column - Row 2</div>
-        </div>
-        <div class="right-column">
-            <div class="row">Right Column - Row 1</div>
-            <div class="row">Right Column - Row 2</div>
-            <div class="row">Right Column - Row 3</div>
-            <div class="row">Right Column - Row 4</div>
-            <div class="row">Right Column - Row 5</div>
-        </div>
-    </div>
+
 </body>
 </html>
