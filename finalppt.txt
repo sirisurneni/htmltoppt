@@ -94,4 +94,32 @@ BeautifulSoup	A Python library used to parse and navigate the rendered HTML stru
 python-pptx	A powerful library to programmatically create and design PowerPoint (.pptx) files, adding slides, text, images, tables, and applying formatting.
 Pillow (PIL)	Python Imaging Library used to process, resize, and manage image files before embedding them into slides.
 requests	A simple HTTP library that downloads external image resources or other assets from URLs to include them in the presentation.
+Application:
+This project automates the creation of PowerPoint presentations from structured JSON data.
+It replaces manual slide creation with a dynamic, template-based system for faster and consistent output.
+Knowledge
+This project applies knowledge of Python programming, data handling, and automation.
+It uses concepts from templating (Jinja2), web parsing (BeautifulSoup), and presentation generation (python-pptx).
 
+Exploration
+New techniques were explored such as dynamic template rendering, HTML structure extraction, and flexible layout management.
+The project also explored solving real-world challenges like large text overflow, image resizing, and error handling during automated slide creation.
+Identification
+The problem identified was the manual, time-consuming process of converting structured data into presentations.
+The project solves this by automating the process using templates and code.
+
+Innovation
+The system introduces template-based design separation, dynamic slide layouts, intelligent overflow handling, and easy customization.
+It enables generating different styled presentations without changing backend logic.
+
+Engagement
+The project involved designing flexible templates, testing with different JSON datasets, and managing content variations.
+Continuous improvements were made to handle layout challenges and user data errors.
+
+Evaluation
+The output was evaluated based on accuracy of content placement, layout flexibility, error handling, and consistency.
+Different templates and data samples were tested to ensure robust and scalable performance.
+
+Demonstration
+The project demonstrated successful generation of PowerPoint files from JSON and HTML templates.
+It showed dynamic handling of text, images, layouts, and continuation slides through multiple examples.
