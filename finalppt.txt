@@ -88,5 +88,10 @@ PowerPoint Generation	Building the PPT dynamically using python-pptx, handling b
 Error Handling & Layout Management	Managing large text overflow, dynamic image resizing, missing fields, broken image links, and continuation slides.
 
 
-
+Python	Main programming language used to automate the workflow, handle file operations, and integrate all modules.
+Jinja2	A templating engine that dynamically injects JSON data into HTML templates, enabling flexible and reusable slide layouts.
+BeautifulSoup	A Python library used to parse and navigate the rendered HTML structure to extract titles, paragraphs, images, and other slide components.
+python-pptx	A powerful library to programmatically create and design PowerPoint (.pptx) files, adding slides, text, images, tables, and applying formatting.
+Pillow (PIL)	Python Imaging Library used to process, resize, and manage image files before embedding them into slides.
+requests	A simple HTTP library that downloads external image resources or other assets from URLs to include them in the presentation.
 
