@@ -6,6 +6,7 @@ from pptx.enum.shapes import MSO_SHAPE
 from pptx.dml.color import RGBColor
 from PIL import Image as PILImage
 from io import BytesIO
+from pptx.enum.text import MSO_AUTO_SIZE
 from jinja2 import Template,Environment, FileSystemLoader
 import json
 import os
@@ -1047,6 +1048,12 @@ def process_standalone_row(row, slide, left_x, y_pos, width, slide_index, prs):
     except Exception as row_error:
         print(f"Error processing standalone row: {row_error}")
         return y_pos + Inches(0.5)  # Default return if error occurs
+
+
+
+
+from pptx.enum.text import MSO_AUTO_SIZE
+
 def process_column_content(column, slide, x_pos, y_pos, width, slide_index=0, prs=None):
     """Process content of a column with proper handling of rows and images"""
     current_y = y_pos
@@ -1382,6 +1389,7 @@ def process_column_content(column, slide, x_pos, y_pos, width, slide_index=0, pr
         print(f"Error processing column: {column_error}")
     
     return current_y
+
 
 # Helper function to calculate appropriate box height
 def calculate_dynamic_box_height(header_text, paragraph_text, other_text, has_images, image_height):
@@ -1981,7 +1989,7 @@ if __name__ == "__main__":
     output_pptx = "presentation.pptx"
     
     # Optional: Define a banner URL (set to None to use default blue banner)
-    banner_url = "https://picsum.photos/100/100?text=Icon1"  # Replace with your actual banner URL
+    banner_url = None  # Replace with your actual banner URL
     
     try:
         # Generate PowerPoint using the updated function with banner URL
