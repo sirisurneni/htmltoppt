@@ -73,7 +73,13 @@ In one sentence:
 Would you also like me to quickly draft a 1-paragraph short version too, in case you want to paste it somewhere like a report cover page or executive summary?
 (Just say yes, short version if you want!) 🌟
 
-
+Python	Main programming language to build the entire automation pipeline.
+Jinja2	For injecting JSON data dynamically into HTML templates.
+BeautifulSoup	For parsing the rendered HTML and extracting structural elements.
+python-pptx	For programmatically creating PowerPoint presentations (.pptx files).
+Pillow (PIL)	For image processing and resizing embedded images.
+requests	For downloading images from URLs dynamically if specified in JSON/HTML.
+argparse	For creating command-line interfaces (optional, if the project supports CLI usage).
 
 
 
