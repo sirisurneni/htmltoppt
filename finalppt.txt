@@ -81,7 +81,11 @@ Pillow (PIL)	For image processing and resizing embedded images.
 requests	For downloading images from URLs dynamically if specified in JSON/HTML.
 argparse	For creating command-line interfaces (optional, if the project supports CLI usage).
 
-
+Template-Based Approach	Using an HTML template to define PPT structure and layout.
+Data Binding	Injecting JSON data into HTML using Jinja2 at runtime.
+HTML Parsing	Extracting layout elements (slides, titles, paragraphs, images, etc.) using BeautifulSoup.
+PowerPoint Generation	Building the PPT dynamically using python-pptx, handling banners, textboxes, layouts, and images.
+Error Handling & Layout Management	Managing large text overflow, dynamic image resizing, missing fields, broken image links, and continuation slides.
 
 
 
